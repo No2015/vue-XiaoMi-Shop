@@ -7,6 +7,7 @@
       v-for="(good, index) in newGoodsList"
       @click="productEvent"
       :class="{'item1': index % 2 === 0, 'item2': index % 2 !== 0}"
+      :key="index"
     >
       <div class="top">
         <img :src="good.imgSrc"/>

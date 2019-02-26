@@ -3,7 +3,7 @@
     <mi-header></mi-header>
     <div class="main">
       <div class="login">登录后享受更多优惠<span style="float: right">去登录></span></div>
-      <div class="item-box" v-for="(item, index) in list">
+      <div class="item-box" v-for="(item, index) in list" :key="index">
         <div class="item">
           <div class="left">
             <img :src="item.imgSrc"/>

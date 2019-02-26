@@ -7,7 +7,7 @@
 
     <div class="swiper-container" ref="a">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="item in bannerList"><img :src="item"/></div>
+        <div class="swiper-slide" v-for="(item,index) in bannerList" :key="index"><img :src="item"/></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>

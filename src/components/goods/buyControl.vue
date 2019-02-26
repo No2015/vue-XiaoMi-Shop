@@ -11,13 +11,13 @@
         <ul>
           <li :class="{active: index === colorIndex}"
               v-for="(item, index) in goodsAttr.attr.color"
-              @click="checkColorEvent(index)">{{ item.text }}
+              @click="checkColorEvent(index)" :key="index">{{ item.text }}
           </li>
         </ul>
         <ul>
           <li :class="{active: index === ramIndex}"
               v-for="(item, index) in goodsAttr.attr.ram"
-              @click="checkRamEvent(index)">{{ item.text }}
+              @click="checkRamEvent(index)" :key="index">{{ item.text }}
           </li>
         </ul>
       </div>

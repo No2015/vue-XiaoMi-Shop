@@ -5,10 +5,10 @@
       <span :class="{'active': !tabState}" @click="tabEvent2">参数</span>
     </div>
     <div class="detail" v-show="tabState">
-      <img :src="item" v-for="item in detailList"/>
+      <img :src="item" v-for="(item,index) in detailList" :key="index"/>
     </div>
     <div class="attr" v-show="!tabState">
-      <img :src="item" v-for="item in attrList"/>
+      <img :src="item" v-for="(item,index) in attrList" :key="index"/>
     </div>
   </div>
 </template>

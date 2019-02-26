@@ -5,9 +5,9 @@
     <mi-buyControl :goodsAttr="goodsAttr" ref="control"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
-      <div class="home"@click="toHomeEvent"></div>
+      <div class="home" @click="toHomeEvent"></div>
       <div class="add"><span @click="butEvent">加入购物车</span></div>
-      <div class="cart"@click="addCartEvent"></div>
+      <div class="cart" @click="addCartEvent"></div>
     </div>
     
     <mi-model ref="alert" type="alert" @confirmEvent="alertBtnEvent">
